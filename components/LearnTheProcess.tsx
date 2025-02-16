@@ -10,7 +10,7 @@ const LearnTheProcess: React.FC = () => {
             <div className="w-full md:w-[45%] h-[270px] md:h-full bg-[#DDDACB] flex flex-row justify-end border-y md:border">
                <div className='flex flex-col w-1/2 p-3 sm:p-4 lg:p-5 sm:gap-3'>
                   <p className='text-lg md:text-xl font-semibold font-questrial'>Strategy & Planning</p>
-                  <p className='text-xs md:text-sm md:text-medium'>
+                  <p className='text-xs md:text-sm lg:text-base'>
                   We begin with a deep dive into your business, goals, and target audience through a discovery call. Our team conducts a thorough competitor analysis to identify opportunities and create a data-driven social media strategy tailored to your brand.
 
                   </p>
@@ -20,14 +20,14 @@ const LearnTheProcess: React.FC = () => {
             <div className='w-full md:w-[55%] h-[300px] md:h-full flex gap-4  md:gap-6  '>
                <div className="flex flex-col w-1/2 h-full bg-[#D2CFC9] p-4 lg:p-5 gap-3 ">
                   <p className='text-lg md:text-xl font-semibold font-questrial lg:leading-9'>Execution & <br /> Content Creation</p>
-                     <p className='text-xs md:text-sm md:text-medium'>
+                     <p className='text-xs md:text-sm lg:text-base'>
                      With a clear strategy in place, we bring your brand to life by designing high-quality content, ad campaigns, and branding elements. 
                   </p>
                </div>
                <div className="relative w-1/2 h-[300px] md:h-full bg-[#D2CFC9] overflow-hidden"><SvgGraph />
                   <div className='absolute bottom-0 md:bottom-2 flex flex-col  p-4 lg:p-5 gap-3 z-10'>
                      <p className='text-lg md:text-xl font-semibold font-questrial'>Optimization & Growth</p>
-                     <p className='text-xs md:text-sm md:text-medium'>
+                     <p className='text-xs md:text-sm lg:text-base'>
                      We continuously monitor performance, analyze key metrics, and refine strategies to improve engagement and conversions.</p>
                   </div>
                   <svg className="absolute -bottom-20 md:bottom-0 w-full " width="337" height="234" viewBox="0 0 337 234" fill="none" xmlns="http://www.w3.org/2000/svg">

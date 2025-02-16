@@ -11,7 +11,7 @@ const MissionVisionValue: React.FC = () => {
          <div className='w-full h-full flex flex-row border-t justify-end'>
             <div className='w-full md:w-2/3 h-full flex flex-col gap-3 p-10 md:p-10 lg:p-20 md:border-r border-r-0'>
                <p className='text-xl font-semibold font-questrial'>About Us               </p>
-               <p className='text-medium leading-7 md:leading-8'>
+               <p className='text-base leading-7 md:leading-7'>
                   At Red Dot Consultancy, we're focused on building lasting relationships with our clients. Our team is always responsive, ensuring you feel supported and that your needs are met. We believe that sustainable measures are the key to achieving long-term success for your brand. We will help you build your brand from the ground up, drive sales, and grow your audience with a unique brand identity.
                </p>
             </div>

@@ -16,7 +16,7 @@ const AboutUs: React.FC = () => {
          </div>
          <div className="w-1/6 md:block hidden h-full border-r" />
          <div className="absolute z-10 left-1/2 -translate-x-1/2 w-[300px] md:w-[440px]  xl:w-[520px] 2xl:w-[600px]  h-full -top-5 font-inter text:sm sm:text-medium md:text-lg xl:text-[1.3rem] 2xl:text-[1.35rem]">
-            <TextOpacityOnScroll contain={contain} phrase="We specialize in growing brands, building strong social media presence, reaching the right audience, and driving sales. Client-first, responsive, and long-term focused mindset drives us to deliver sustainable and impactful solutions," />
+            <TextOpacityOnScroll contain={contain} phrase="We specialize in growing brands, building strong social media presence, reaching the right audience, and driving sales. Client-first, responsive, and long-term focused mindset drives us to deliver sustainable and impactful solutions." />
          </div>
          <svg className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 w-full h-full' width="1094" height="299" viewBox="0 0 1094 299" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="1094" height="299" fill="url(#paint0_radial_257_3)" />

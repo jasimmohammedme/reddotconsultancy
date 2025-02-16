@@ -12,7 +12,7 @@ const Testimonials: React.FC = () => {
    return (
       <div className='relative flex flex-col border-l border-b'>
          <div className='w-full h-full flex flex-row border-r'>
-            <p className="w-5/6 text-3xl font-questrial p-5 py-7 ">What Our Clients Have to Say</p>
+            <p className="w-5/6 text-3xl font-questrial p-5 py-7 ">What Our Clients Have to Say<span className='text-primary'>.</span></p>
             <div className="w-1/6  flex gap-2 items-end">
                <div className="w-full h-10 border-t flex justify-between items-center">
                   <button className="custom-prev w-12 h-10 bg-[#030303] flex items-center justify-center">
