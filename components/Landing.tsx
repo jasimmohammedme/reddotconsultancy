@@ -12,7 +12,7 @@ const Landing: React.FC = () => {
 
    return (
       <div   className='h-[85vh] md:h-[700px] flex items-center justify-start relative'>
-         <p className=' text-5xl 2xl:text-6xl leading-tight 2xl:leading-tight font-outfit font-semibold'>
+         <p style={{ lineHeight: "1.15"}} className=' text-5xl 2xl:text-6xl 2xl:leading-heading font-outfit font-semibold'>
             We Help <br />
             Businesses<br />
             &nbsp;&nbsp;&nbsp;&nbsp;

@@ -40,15 +40,18 @@ const OurServices: React.FC = () => {
             </div>
          </div>
          <div className='w-full h-full md:hidden block '>
-            <div className='w-full h-full flex flex-row'>
+            <div className='w-full h-full flex flex-row relative'>
                <div className='w-1/2 h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10 border-r'>
                   <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Content Creation </p>
                   <p className='text-sm md:text-base lg:text-lg'>We provide full-service content creation, including photography, videography, graphic design, video editing, and photo editing.</p>
                </div>
-               <div className='w-1/2 h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10 border-r'>
+               <div className='w-1/2 h-full relative border-r'>
+               <div className='w-full h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10  '>
                   <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'> </p>
-                  <p className='text-sm md:text-base'> </p> 
+                  <p className='text-sm md:text-base'> </p>
                </div>
+               <div className=' absolute bottom-0 right-0'><GridAnimation /></div>
+            </div>
             </div>
          </div>
       </div>

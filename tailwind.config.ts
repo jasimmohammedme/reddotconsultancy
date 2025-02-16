@@ -22,7 +22,10 @@ export default {
       },
       borderColor: {
         DEFAULT: '#C1BEB7',
-    },
+      },
+      lineHeight: {
+        heading: "3",
+      },
     },
   },
   plugins: [],

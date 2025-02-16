@@ -13,9 +13,9 @@ const Navbar = () => {
               alt="Logo"
             />
             <div className='flex items-center gap-3 md:gap-7'>
-               <a href='#our-story' className='text-xs md:text-sm font-questrial font-medium'>About</a>
-               <a href='#what-we-do' className='text-xs md:text-sm font-questrial font-medium'>Services</a>
-               <a href='#connect' className='text-xs md:text-sm font-questrial font-medium'>Connect</a>
+               <a href='#our-story' className='font-questrial font-medium'><p className='text-sm md:text-base '> About</p></a>
+               <a href='#what-we-do' className='font-questrial font-medium'><p className='text-sm md:text-base '>Services </p></a>
+               <a href='#connect' className='font-questrial font-medium'><p className='text-sm md:text-base '>Connect </p></a> 
             </div>
          </div>
       </motion.div>
