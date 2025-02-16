@@ -8,14 +8,14 @@ const Navbar = () => {
          <div className="pr-5 max-w-screen-xl mx-auto h-16 flex items-center justify-between ">
             <Image 
               src="/logo.svg"
-              width={170}
-              height={80}
+              width={150}
+              height={60}
               alt="Logo"
             />
-            <div className='flex items-center gap-3 md:gap-7'>
-               <a href='#our-story' className='font-questrial '><p className='text-base md:text-base '> About</p></a>
-               <a href='#what-we-do' className='font-questrial '><p className='text-base md:text-base '>Services </p></a>
-               <a href='#connect' className='font-questrial '><p className='text-base md:text-base '>Connect </p></a> 
+            <div className='flex items-center gap-3 md:gap-7 lg:gap-10'>
+               <a href='#our-story' className='text-base   lg:text-lg font-questrial font-medium'>About</a>
+               <a href='#what-we-do' className='text-base   lg:text-lg font-questrial font-medium'>Services</a>
+               <a href='#connect' className='text-base  lg:text-lg font-questrial font-medium'>Connect</a>
             </div>
          </div>
       </motion.div>
