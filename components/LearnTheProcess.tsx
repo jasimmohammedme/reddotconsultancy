@@ -21,7 +21,7 @@ const LearnTheProcess: React.FC = () => {
                <div className="flex flex-col w-1/2 h-full bg-[#D2CFC9] p-4 lg:p-5 gap-3 ">
                   <p className='text-lg md:text-xl font-semibold font-questrial lg:leading-9'>Execution & <br /> Content Creation</p>
                      <p className='text-xs md:text-sm lg:text-base'>
-                     With a clear strategy in place, we bring your brand to life by designing high-quality content, ad campaigns, and branding elements. 
+                     With a clear strategy in place, we bring your brand to life by designing high-quality content, advertisement campaigns, and branding elements. 
                   </p>
                </div>
                <div className="relative w-1/2 h-[300px] md:h-full bg-[#D2CFC9] overflow-hidden"><SvgGraph />

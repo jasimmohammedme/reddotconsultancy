@@ -17,7 +17,7 @@ const testimonialData: TestimonialType[] = [
    {
       date: "December 22 - 2022",
       title: "Advea Digital",
-      description: "The branding and logo perfectly captured our vision for the digital marketing agency.Thanks to Jasim and the Red Dot team for the top-notch business consulting, graphic design, and visual identity.",
+      description: "The branding and logo perfectly captured our vision for the digital marketing agency. Thanks to Jasim and the Red Dot team for the top-notch business consulting, graphic design, and visual identity.",
       author: "Tsimin Manoj",
       image: "AdveaDigital.png",
    },
@@ -72,7 +72,7 @@ const testimonialData: TestimonialType[] = [
    },
    {
       date: "December 22 - 2022",
-      title: "The Deming's House",
+      title: "The Deming's House",
       description: "I am incredibly pleased with the marketing team work they’ve shown remarkable professionalism, expertise, and dedication to delivering high-quality service. They have a deep understanding of the social media market, which has been invaluable in helping us grow our presence online. Jasim, in particular, goes above and beyond to ensure every detail is covered. Keep up the work red dot team.",
       author: "Nusrat",
       image: "Deming's.png",
