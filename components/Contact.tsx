@@ -152,7 +152,7 @@ const Contact: React.FC = () => {
 
 const Logo = () => {
    return (
-      <svg className='absolute top-0 right-0 w-32 md:w-48 h-32 md:h-48 p-3' width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className='absolute top-0 right-0 w-32 md:w-36 h-32 md:h-36 p-3' width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
          <circle cx="72.5" cy="11.5" r="11.5" fill="#D2130A" />
          <path d="M1 29H54.5V83.5M4 79L51.975 31.5" stroke="black" strokeWidth="10" />
       </svg>
