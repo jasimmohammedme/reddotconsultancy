@@ -7,7 +7,7 @@ const LearnTheProcess: React.FC = () => {
       <div className='relative h-[800px] md:h-[500px] lg:h-[600px] xl:h-[600px] w-full border-x border-b'>
          <p className="text-3xl font-questrial p-5 py-8">Our   process<span className='text-primary'>.</span></p>
          <div className="flex flex-col md:flex-row gap-4 md:gap-6 h-[300px] lg:h-[390px]">
-            <div className="w-full md:w-[45%] h-[300px]  md:h-full bg-[#DDDACB] flex flex-row justify-end border-y md:border">
+            <div className="w-full md:w-[45%] h-[280px]  md:h-full bg-[#DDDACB] flex flex-row justify-end border-y md:border">
                <div className='flex flex-col w-1/2 h-[270px] p-3 sm:p-4 lg:p-5 gap-1 sm:gap-3'>
                   <p className='text-lg md:text-xl font-semibold font-questrial'>Strategy & Planning</p>
                   <p className='text-xs md:text-sm lg:text-base'>
