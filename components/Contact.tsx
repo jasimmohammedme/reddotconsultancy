@@ -84,10 +84,9 @@ const Contact: React.FC = () => {
       <div id='connect'>
          <div className='w-full h-[100px] md:h-[150px] border-x border-b' />
          <div className='h-[580px] md:h-[600px] xl:h-[700px] w-full flex items-center border-x border-b'>
-            <div className='md:w-1/5 lg:w-1/6 h-full hidden md:block'>.</div>
-            <div className='w-full md:w-2/5 h-full px-5 md:px-0'>
+            <div className='md:w-1/6 lg:w-1/6 h-full hidden md:block'>.</div>
+            <div className='w-full md:w-3/5 h-full px-5 md:px-0'>
                <p className="text-3xl font-questrial py-8">Let&apos;s Get <br /> Started<span className='text-primary'>.</span></p>
-               {/* <p className="  text-3xl font-questrial py-5 py-7 ">Let&apos;s Get <br /> Started<span className='text-primary'>.</span></p> */}
                <form onSubmit={handleSubmit}>
                   <div className='w-full h-[370px] border p-5 flex flex-col gap-1'>
                      <p className='text-sm md:text-base'>Your Name</p>
@@ -133,8 +132,8 @@ const Contact: React.FC = () => {
                   </div>
                </form>
             </div>
-            <div className='w-1/5 lg:w-1/6 h-full hidden md:block' />
-            <div className='w-1/5 lg:w-1/6 h-full border-x hidden lg:block'>
+            <div className='w-1/6 lg:w-1/6 h-full hidden md:block  ' />
+            <div className='w-1/6 lg:w-1/6 h-full border-x hidden lg:block '>
                <div className='w-full h-[150px] lg:h-[175px] border-b' />
                <div className='w-full h-[150px] lg:h-[175px] border-b' />
                <div className='w-full h-[150px] lg:h-[175px] border-b' />
