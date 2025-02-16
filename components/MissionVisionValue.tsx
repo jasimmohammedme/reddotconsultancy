@@ -10,7 +10,7 @@ const MissionVisionValue: React.FC = () => {
          <div className="text-3xl font-questrial h-20 md:h-32" />
          <div className='w-full h-full flex flex-row border-t justify-end'>
             <div className='w-full md:w-2/3 h-full flex flex-col gap-3 p-10 md:p-10 lg:p-20 md:border-r border-r-0'>
-               <p className='text-xl font-semibold font-questrial'>What we do</p>
+               <p className='text-xl font-semibold font-questrial'>About Us               </p>
                <p className='text-medium leading-7 md:leading-8'>
                   At Red Dot Consultancy, we're focused on building lasting relationships with our clients. Our team is always responsive, ensuring you feel supported and that your needs are met. We believe that sustainable measures are the key to achieving long-term success for your brand. We will help you build your brand from the ground up, drive sales, and grow your audience with a unique brand identity.
                </p>
@@ -20,7 +20,7 @@ const MissionVisionValue: React.FC = () => {
                   <div className='w-full h-52 flex flex-row'></div>
                   <div className='w-full h-full flex relative border-t bg-[#D0CED2] items-center justify-center overflow-hidden' >
                      <Blocks />
-                     <div className='absolute w-full h-full lg:block hidden'><Svg /></div>
+                     <div className='absolute w-full h-full md:block hidden'><Svg /></div>
                   </div>
                </div>
             </div>
@@ -61,7 +61,7 @@ const Blocks = () => {
       }
    )
    return (
-      <div className="relative lg:top-10 w-[250px] h-full overflow-hidden  ">
+      <div className="relative xl:top-10 w-[250px] h-full overflow-hidden  ">
          <canvas className='absolute w-full ' width={1000} height={1800} ref={ref} >
          </canvas>
       </div>

@@ -12,7 +12,7 @@ const Progress: React.FC = () => {
 
    useEffect(() => {
       animate(count1, 3, { duration: 2 });
-      animate(count2, 135, { duration: 2 });
+      animate(count2, 40, { duration: 2 });
       animate(count3, 68, { duration: 2 });
    }, []);
    return (

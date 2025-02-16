@@ -117,7 +117,7 @@ const Contact: React.FC = () => {
                         rows={5}
                         value={formData.message}
                         onChange={handleChange}
-                        placeholder='Enter your message'
+                        placeholder='What services are you looking for your business?'
                         className='w-full h-[100px] text-xs border p-2 bg-transparent'
                      />
 

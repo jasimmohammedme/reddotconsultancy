@@ -15,19 +15,30 @@ const AboutUs: React.FC = () => {
             <Button />
          </div>
          <div className="w-1/6 md:block hidden h-full border-r" />
-         <div className="absolute left-1/2 -translate-x-1/2 w-[300px] md:w-[440px]  xl:w-[500px] h-full -top-5 font-inter text:sm sm:text-medium md:text-lg xl:text-xl">
-            <TextOpacityOnScroll contain={contain} phrase="We specialize in helping businesses manage, grow, and thrive on social media with expert strategies and engaging content. Our goal is to simplify digital marketing for businesses, ensuring consistent growth and brand recognition." />
+         <div className="absolute z-10 left-1/2 -translate-x-1/2 w-[300px] md:w-[440px]  xl:w-[520px] 2xl:w-[600px]  h-full -top-5 font-inter text:sm sm:text-medium md:text-lg xl:text-[1.3rem] 2xl:text-[1.35rem]">
+            <TextOpacityOnScroll contain={contain} phrase="We specialize in growing brands, building strong social media presence, reaching the right audience, and driving sales. Client-first, responsive, and long-term focused mindset drives us to deliver sustainable and impactful solutions," />
          </div>
+         <svg className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 w-full h-full' width="1094" height="299" viewBox="0 0 1094 299" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="1094" height="299" fill="url(#paint0_radial_257_3)" />
+            <defs>
+               <radialGradient id="paint0_radial_257_3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(547 149.5) scale(547 149.5)">
+                  <stop stopColor="#F4F3EF" />
+                  <stop offset="1" stopColor="#F4F3EF" stopOpacity="0" />
+               </radialGradient>
+            </defs>
+         </svg>
+
       </div>
    );
 }
 
 const Button = () => {
    return (
-      <Link href="#connect" className="w-full h-8 md:h-10 absolute z-10 border-y bottom-16 lg:bottom-18 xl:bottom-24 flex justify-between items-center">
-         <p className="w-full text-[10px] md:text-sm lg:text-base text-center font-inter text-gray-600">Contact Now</p>
-         <div className="w-6 h-8 lg:w-10 lg:h-10 bg-[#030303] flex items-center justify-center">
-            <svg className='w-4 h-4 lg:w-6 lg:h-6' width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <Link href='#connect' className="w-full bg-[#030303] h-7 md:h-11 absolute z-40 border-y bottom-16 lg:bottom-18 xl:bottom-24">
+         <div className="h-full w-full flex justify-center px-0 gap-1 md:gap-4 items-center">
+
+         <p className=" text-[10px] md:text-md lg:text-base text-center font-inter text-white"><span className='block md:hidden'>Contact</span> <span className='hidden md:block'> Contact Now</span></p>
+            <svg className='w-3 h-3 lg:w-4 lg:h-4' width="16" height="23" viewBox="0 0 16 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path d="M1 1L15 11.7234L1 22" stroke="#F4F3EF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
          </div>

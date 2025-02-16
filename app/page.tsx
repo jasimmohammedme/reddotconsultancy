@@ -32,7 +32,7 @@ export default function Home() {
     <main className="px-3 sm:px-5 xl:max-w-screen-xl mx-auto font-sans h-full pb-0 relative">
       <Navbar />
       <Landing />
-      <Progress />
+       <Progress /> 
       <AboutAs />
       <LearnTheProcess />
       <OurServices />

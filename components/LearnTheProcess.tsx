@@ -1,33 +1,34 @@
 'use client'
-import { useMotionValueEvent, useScroll, useTransform } from 'framer-motion'
+import { useMotionValueEvent, useScroll, useTransform ,motion, useSpring} from 'framer-motion'
 import React, { useCallback, useRef } from 'react'
 
 const LearnTheProcess: React.FC = () => {
    return (
       <div className='relative h-[800px] md:h-[500px] lg:h-[600px] xl:h-[600px] w-full border-x border-b'>
-         <p className="text-3xl font-questrial p-5 py-8">Learn the <br /> process<span className='text-primary'>.</span></p>
+         <p className="text-3xl font-questrial p-5 py-8">Our   process<span className='text-primary'>.</span></p>
          <div className="flex flex-col md:flex-row gap-4 md:gap-6 h-[300px] lg:h-[390px]">
             <div className="w-full md:w-[45%] h-[270px] md:h-full bg-[#DDDACB] flex flex-row justify-end border-y md:border">
-               <div className='flex flex-col w-1/2 p-4 lg:p-5 gap-3'>
-                  <p className='text-lg md:text-xl font-semibold font-questrial'>Impactful Strategy Design</p>
-                  <p className='text-sm md:text-medium'>
-                     We craft a tailored social media strategy by analyzing your business, audience, and trends, ensuring a strong brand voice and engagement.
+               <div className='flex flex-col w-1/2 p-3 sm:p-4 lg:p-5 sm:gap-3'>
+                  <p className='text-lg md:text-xl font-semibold font-questrial'>Strategy & Planning</p>
+                  <p className='text-xs md:text-sm md:text-medium'>
+                  We begin with a deep dive into your business, goals, and target audience through a discovery call. Our team conducts a thorough competitor analysis to identify opportunities and create a data-driven social media strategy tailored to your brand.
+
                   </p>
                </div>
                <StepOne />
             </div>
             <div className='w-full md:w-[55%] h-[300px] md:h-full flex gap-4  md:gap-6  '>
                <div className="flex flex-col w-1/2 h-full bg-[#D2CFC9] p-4 lg:p-5 gap-3 ">
-                  <p className='text-lg md:text-xl font-semibold font-questrial lg:leading-9'>Maximizing Execution <br /> Efficiency</p>
-                  <p className='text-sm md:text-medium'>
-                     From content creation to scheduling, we streamline social media execution using automation, influencer collaborations, and paid promotions, ensuring consistent visibility.
+                  <p className='text-lg md:text-xl font-semibold font-questrial lg:leading-9'>Execution & <br /> Content Creation</p>
+                     <p className='text-xs md:text-sm md:text-medium'>
+                     With a clear strategy in place, we bring your brand to life by designing high-quality content, ad campaigns, and branding elements. 
                   </p>
                </div>
-               <div className="relative w-1/2 h-[300px] md:h-full bg-[#D2CFC9] overflow-hidden"><StepTwo />
+               <div className="relative w-1/2 h-[300px] md:h-full bg-[#D2CFC9] overflow-hidden"><SvgGraph />
                   <div className='absolute bottom-0 md:bottom-2 flex flex-col  p-4 lg:p-5 gap-3 z-10'>
-                     <p className='text-lg md:text-xl font-semibold font-questrial'>Core Functionality Marking</p>
-                     <p className='text-sm md:text-medium'>
-                        We track interactions, identify trends, and optimize strategies to boost engagement and drive quality leads.</p>
+                     <p className='text-lg md:text-xl font-semibold font-questrial'>Optimization & Growth</p>
+                     <p className='text-xs md:text-sm md:text-medium'>
+                     We continuously monitor performance, analyze key metrics, and refine strategies to improve engagement and conversions.</p>
                   </div>
                   <svg className="absolute -bottom-20 md:bottom-0 w-full " width="337" height="234" viewBox="0 0 337 234" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <rect width="346" height="234" transform="translate(-5)" fill="url(#paint0_linear_19_12)" />
@@ -84,43 +85,31 @@ const StepOne = () => {
    )
 }
 
-const StepTwo = () => {
+
+const SvgGraph = () => {
    const ref = useRef<HTMLCanvasElement>(null)
    const { scrollYProgress } = useScroll({
       offset: ['start end', 'end center']
    });
+   
 
-   const [images, setImages] = React.useState<HTMLImageElement[]>([]);
+   const path  = useTransform(scrollYProgress, [0, 0.5], [0, 1],);
+   const pathTwo  = useTransform(scrollYProgress, [0, 0.5], [0, 1],);
+   const pathLength = useSpring(pathTwo, { stiffness: 100, damping: 190 });
 
-   React.useEffect(() => {
-      const loadedImages: HTMLImageElement[] = [];
-      for (let i = 1; i <= 121; i++) {
-         const img = new Image();
-         img.src = `/frame/${i}.webp`;
-         loadedImages.push(img);
-      }
-      setImages(loadedImages);
-   }, []);
-
-   const currentIndex = useTransform(scrollYProgress, [0, 1], [1, 121], { clamp: true });
-
-   const render = useCallback((index: number) => {
-      if (images[index - 1]) {
-         ref.current?.getContext('2d')?.drawImage(images[index - 1], 0, 0);
-      }
-   }, [images])
-
-   useMotionValueEvent(currentIndex, 'change',
-      (latest) => {
-         render(Number(latest.toFixed()))
-      }
-   )
    return (
-      <div className="relative w-full h-full overflow-hidden ">
-         <canvas className='absolute lg:-top-20 w-full ' width={1000} height={1800} ref={ref} />
-      </div>
+      <motion.svg className='absolute w-full h-full -top-24 md:-top-20 xl:-top-16 ' width="327" height="245" viewBox="0 0 327 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <line y1="65" x2="327.002" y2="75" stroke="#DFDBD5" />
+         <line x1="0.000976562" y1="136.5" x2="327.001" y2="137.5" stroke="#DFDBD5" />
+         <line x1="0.000976562" y1="207.5" x2="327.001" y2="208.5" stroke="#DFDBD5" />
+         <line x1="163.501" x2="162.501" y2="245" stroke="#DFDBD5" />
+         <line x1="220.501" x2="219.501" y2="245" stroke="#DFDBD5" />
+         <line x1="277.501" x2="276.501" y2="245" stroke="#DFDBD5" />
+         <line x1="106.501" x2="105.501" y2="245" stroke="#DFDBD5" />
+         <line x1="49.501" x2="48.501" y2="245" stroke="#DFDBD5" />
+         <motion.path initial={{ pathLength: 0 }} style={{ pathLength: path }}   d="M49.5 126.5L106 105L163 181L220.5 162L276 105L293 75.5" stroke="#969595" />
+         <motion.path initial={{ pathLength: 0 }} style={{ pathLength: pathTwo }} d="M49 208L114.87 132.5L140 143.5L159.26 102.5H177L197 75L231.5 102.5L294.029 32" stroke="#EC1704" />
+      </motion.svg>
    )
 }
-
-
 export default LearnTheProcess

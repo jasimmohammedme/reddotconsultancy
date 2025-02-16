@@ -4,37 +4,37 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const OurServices: React.FC = () => {
    return (
-      <div id='what-we-do' className='relative h-[700px] md:h-[460px] lg:h-[500px] xl:h-[500px] w-full flex flex-col border-l   md:border-x border-b '>
+      <div id='what-we-do' className='relative h-[700px] md:h-[500px] lg:h-[540px] xl:h-[520px] w-full flex flex-col border-l   md:border-x border-b '>
          <p className="text-3xl font-questrial p-5 py-7 border-r md:border-r-0">Our Services</p>
          <div className='w-full h-full flex flex-row border-y'>
             <div className='w-1/2 md:w-1/3 h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10 border-r '>
-               <p className='text-lg md:text-xl font-semibold font-questrial'>Social Media Management</p>
-               <p className='text-sm md:text-medium'>Strategy, content posting, branding, and page growth to enhance your online presence</p>
+               <p className='text-lg md:text-xl font-semibold font-questrial'>Social Media Management </p>
+               <p className='text-sm md:text-medium'>We provide expert social media consulting, including strategy development, content posting, branding, and page growth. </p>
             </div>
             <div className='w-1/2 md:w-1/3 h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10 border-r'>
-               <p className='text-lg md:text-xl font-semibold font-questrial'>Content Creation</p>
-               <p className='text-sm md:text-medium'>High-quality photography, videography, and engaging blog writing to captivate your audience.</p>
+               <p className='text-lg md:text-xl font-semibold font-questrial'>Paid Advertising &  Lead Generation  </p>
+               <p className='text-sm md:text-medium'>We help businesses grow by creating targeted ad campaigns that drive engagement, attract quality leads, and maximize conversions. </p>
             </div>
             <div className='md:block hidden w-1/3 h-full'>
                <div className='w-full h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10  '>
-                  <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Graphic & Web Design</p>
-                  <p className='text-sm md:text-medium'>Stunning visuals, websites, and branding elements to establish a strong digital identity.</p>
+                  <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Content Creation </p>
+                  <p className='text-sm md:text-medium'>We provide full-service content creation, including photography, videography, graphic design, video editing, and photo editing. </p>
                </div>
             </div>
          </div>
          <div className='w-full h-full flex flex-row'>
             <div className='w-1/2 md:w-1/3 h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10 border-b md:border-b-0 border-r'>
-               <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Advertising & Lead Generation</p>
-               <p className='text-sm md:text-medium'>Targeted Facebook and Instagram ads to drive traffic and maximize conversions.</p>
+               <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Branding & Design </p>
+               <p className='text-sm md:text-medium'>We provide complete graphic design and branding services, including logos, brochures, social media graphics, visiting cards, billboards, and merchandise designs. </p>
             </div>
             <div className='w-1/2 md:w-1/3 h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10 border-b md:border-b-0 border-r '>
-               <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Post-Production & Copywriting</p>
-               <p className='text-sm md:text-medium'> Polished editing, compelling copy, and refined messaging for impactful storytelling.</p>
+               <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Web Design </p>
+               <p className='text-sm md:text-medium'>We design and develop responsive and professional websites that enhance your brand and drive conversions.</p>
             </div>
             <div className='md:block hidden w-1/3 h-full relative'>
                <div className='w-full h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10  '>
-                  <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Growth & Analytics</p>
-                  <p className='text-sm md:text-medium'>Performance tracking and data-driven insights to optimize strategy and ensure success.</p>
+                  <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'> </p>
+                  <p className='text-sm md:text-medium'> </p>
                </div>
                <div className='absolute bottom-0 right-0'><GridAnimation /></div>
             </div>
@@ -42,12 +42,12 @@ const OurServices: React.FC = () => {
          <div className='w-full h-full md:hidden block '>
             <div className='w-full h-full flex flex-row'>
                <div className='w-1/2 h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10 border-r'>
-                  <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Growth & Analytics</p>
-                  <p className='text-sm md:text-medium'>Performance tracking and data-driven insights to optimize strategy and ensure success.</p>
+                  <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Content Creation </p>
+                  <p className='text-sm md:text-medium'>We provide full-service content creation, including photography, videography, graphic design, video editing, and photo editing.</p>
                </div>
                <div className='w-1/2 h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10 border-r'>
-                  <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Graphic & Web Design</p>
-                  <p className='text-sm md:text-medium'>Stunning visuals, websites, and branding elements to establish a strong digital identity.</p>
+                  <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'> </p>
+                  <p className='text-sm md:text-medium'> </p>
                </div>
             </div>
          </div>
