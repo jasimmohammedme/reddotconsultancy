@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const OurServices: React.FC = () => {
    return (
-      <div id='what-we-do' className='relative h-[700px] md:h-[500px] lg:h-[600px] xl:h-[540px] w-full flex flex-col border-l   md:border-x border-b '>
+      <div id='what-we-do' className='relative h-[800px] sm:h-[700px] md:h-[500px] lg:h-[600px] xl:h-[540px] w-full flex flex-col border-l   md:border-x border-b overflow-hidden'>
          <p className="text-3xl font-questrial p-5 py-7 border-r md:border-r-0">Our Services<span className='text-primary'>.</span></p>
          <div className='w-full h-full flex flex-row border-y'>
             <div className='w-1/2 md:w-1/3 h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10 border-r '>
@@ -45,7 +45,7 @@ const OurServices: React.FC = () => {
                   <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'>Content Creation </p>
                   <p className='text-sm md:text-base lg:text-lg'>We provide full-service content creation, including photography, videography, graphic design, video editing, and photo editing.</p>
                </div>
-               <div className='w-1/2 h-full relative border-r'>
+               <div className='w-1/2 h-full relative border-r overflow-hidden'>
                <div className='w-full h-full flex flex-col gap-3 p-3 md:p-5 lg:p-10  '>
                   <p className='text-base md:text-lg lg:text-xl font-semibold font-questrial'> </p>
                   <p className='text-sm md:text-base'> </p>
