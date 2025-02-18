@@ -10,7 +10,7 @@ const LearnTheProcess: React.FC = () => {
             <div className="w-full md:w-[45%] h-[280px]  md:h-full bg-[#DDDACB] flex flex-row justify-end border-y md:border">
                <div className='flex flex-col w-1/2 h-[270px] p-3 sm:p-4 lg:p-5 gap-1 sm:gap-3'>
                   <p className='text-lg md:text-xl font-semibold font-questrial'>Strategy & Planning</p>
-                  <p className='text-xs md:text-sm lg:text-base'>
+                  <p className='text-sm md:text-base lg:text-lg'>
                   We begin with a deep dive into your business, goals, and target audience through a discovery call. Our team conducts a thorough competitor analysis to identify opportunities and create a data-driven social media strategy tailored to your brand.
 
                   </p>
