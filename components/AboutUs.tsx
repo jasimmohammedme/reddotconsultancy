@@ -7,7 +7,7 @@ const AboutUs: React.FC = () => {
    const contain = useRef<HTMLDivElement>(null) as React.RefObject<HTMLDivElement>;
 
    return (
-      <div id='our-story' ref={contain} className="relative h-[400px] xl:h-[500px] w-full flex border-x border-b">
+      <div ref={contain} className="relative h-[400px] xl:h-[500px] w-full flex border-x border-b">
          <div className="w-1/6 md:block hidden h-full" />
          <div className="w-1/4 md:w-1/6 h-full border-x" />
          <div className="w-1/4 md:w-1/6 h-full" />

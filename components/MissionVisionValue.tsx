@@ -6,7 +6,7 @@ import { useCallback, useMemo, useRef } from 'react';
 
 const MissionVisionValue: React.FC = () => {
    return (
-      <div className='relative h-[550px] md:h-[550px] xl:h-[650px] w-full flex flex-col border-x border-b '>
+      <div id='our-story' className='relative h-[550px] md:h-[550px] xl:h-[650px] w-full flex flex-col border-x border-b '>
          <div className="text-3xl font-questrial h-20 md:h-32" />
          <div className='w-full h-full flex flex-row border-t justify-end'>
             <div className='w-full md:w-2/3 h-full flex flex-col gap-3 p-10 md:p-10 lg:p-20 md:border-r border-r-0'>
