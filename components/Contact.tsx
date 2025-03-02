@@ -3,9 +3,10 @@ import React from 'react'
 const Contact: React.FC = () => {
    const [formData, setFormData] = React.useState({
       name: '',
-      email: '',
+      email: '', // Renamed from 'email' to 'email'
       message: ''
    });
+
    const [errors, setErrors] = React.useState({
       name: '',
       email: '',
@@ -21,12 +22,18 @@ const Contact: React.FC = () => {
          isValid = false;
       }
 
+      // Validate email (either email or phone)
       if (!formData.email.trim()) {
-         newErrors.email = 'Email is required';
+         newErrors.email = 'Email or phone number is required';
          isValid = false;
-      } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-         newErrors.email = 'Invalid email format';
-         isValid = false;
+      } else {
+         const emailRegex = /\S+@\S+\.\S+/;
+         const phoneRegex = /^[0-9]{10}$/; // Basic 10-digit phone number validation
+
+         if (!emailRegex.test(formData.email) && !phoneRegex.test(formData.email)) {
+            newErrors.email = 'Enter a valid email or phone number';
+            isValid = false;
+         }
       }
 
       if (!formData.message.trim()) {
@@ -100,13 +107,13 @@ const Contact: React.FC = () => {
                      />
                      <p className='text-primary text-xs h-4'>{errors.name}</p>
 
-                     <p className='text-sm md:text-base'>Your Email</p>
+                     <p className='text-sm md:text-base'>Email or Phone</p>
                      <input
-                        type="email"
+                        type="text"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder='Enter your email'
+                        placeholder='Enter your email or phone number'
                         className='w-full h-[50px] text-xs border p-2 bg-transparent'
                      />
                      <p className='text-primary text-xs h-4'>{errors.email}</p>
@@ -148,6 +155,8 @@ const Contact: React.FC = () => {
       </div>
    )
 }
+
+
 
 const Logo = () => {
    return (
