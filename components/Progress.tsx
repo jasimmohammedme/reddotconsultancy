@@ -22,7 +22,7 @@ const Progress: React.FC = () => {
                {experience}
             </motion.h1>
             <p className="text-gray-600 text-sm md:text-base">
-               Years of experiences
+               Years of Experience
             </p>
          </div>
          <div className='w-1/2   h-full flex flex-col items-center justify-center gap-2 px-5 md:px-16 border-x-0 md:border-x border-l  '>
