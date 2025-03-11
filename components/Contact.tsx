@@ -93,7 +93,7 @@ const Contact: React.FC = () => {
          <div className='h-[580px] md:h-[600px] xl:h-[700px] w-full flex items-center border-x border-b'>
             <div className='md:w-1/6 lg:w-1/6 h-full hidden md:block'>.</div>
             <div className='w-full md:w-3/5 h-full px-5 md:px-0'>
-               <p className="text-3xl font-questrial py-8">Let&apos;s Get <br /> Started<span className='text-primary'>.</span></p>
+               <p className="text-3xl font-questrial py-8">Let&apos;s Get <br /> Started<span className='text-primary'></span></p>
                <form onSubmit={handleSubmit}>
                   <div className='w-full h-[370px] border p-5 flex flex-col gap-1'>
                      <p className='text-sm md:text-base'>Your Name</p>
