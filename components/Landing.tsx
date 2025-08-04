@@ -14,14 +14,14 @@ const Landing: React.FC = () => {
       <div   className='h-[85vh] md:h-[700px] flex items-center justify-start relative'>
          <p className=' text-5xl 2xl:text-6xl 2xl:leading-heading font-outfit font-semibold'>
             We Help <br />
-            Businesses<br />
+            Founders<br />
             &nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span className='text-primary'>Handle </span>
             <br />
-            Their Social <br /> Media.
+            Their Brand <br /> Online.
          </p>
          <motion.div  style={{ scale: scale, y: animatedMoveY }} animate={{ scale: 0.8, rotate: 360 }} transition={{ repeat: Infinity, duration: 20, ease: "linear" }} className="absolute left-1/4 opacity-10 w-36 h-36 rounded-full  ">
             <svg className="blur-xl opacity-100 left-1/4" width="239" height="237" viewBox="0 0 239 237" fill="none" xmlns="http://www.w3.org/2000/svg">
